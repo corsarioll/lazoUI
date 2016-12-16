@@ -1,0 +1,37 @@
+<div class="row">
+  <form class="col s4 offset-s4 card-panel" style="padding-bottom:20px;">
+      <h3 class="header center">Sing In</h3>
+      
+      <div class="row">
+        <div class="input-field inline">
+          <input type="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+      </div> 
+
+      <div class="row">
+        <div class="input-field inline">
+          <input id="password" type="password" class="validate" >
+          <label for="password">Password</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field inline">
+          <input type="text" [value]="username" (input)="username = $event.target.value">
+          <label for="text">otro</label>
+        </div>
+      </div>
+
+      <a class="waves-effect waves-light btn col s12 center">SIGN IN</a>
+
+      <a class="waves-effect waves-teal btn-flat col s6 center">I forgot my password</a>
+
+      <a class="waves-effect waves-teal btn-flat col s6 center">I don't have a count</a>
+
+      <h5 class="center">Or</h5>
+
+      <a class="waves-effect waves-light btn col s12 center">SIGN IN WITH GOOGLE</a>
+
+  </form>
+</div>
